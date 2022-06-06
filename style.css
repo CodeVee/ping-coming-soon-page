@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 10px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.page {
+  background: hsl(0deg, 0%, 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  padding-top: 8rem;
+  padding-bottom: 4.9rem;
+}
+.page__logo {
+  margin-bottom: 4rem;
+}
+.page__header {
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: hsl(0deg, 0%, 59%);
+  margin-bottom: 1.6rem;
+}
+.page__header span {
+  font-weight: 700;
+  color: hsl(209deg, 33%, 12%);
+}
+.page__sub {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  color: hsl(209deg, 33%, 12%);
+  margin-bottom: 4rem;
+}
+
+.form {
+  width: 63.7rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9.4rem;
+  position: relative;
+}
+.form.error {
+  margin-bottom: 6.8rem;
+}
+.form__control {
+  width: 42.1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
+  outline: none;
+  padding: 0 3rem;
+  color: hsl(223deg, 100%, 88%);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  cursor: pointer;
+}
+.form__input::placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+.error .form__input {
+  border: 1px solid hsl(354deg, 100%, 66%);
+}
+.form__btn {
+  width: 20rem;
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  border: none;
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(223deg, 87%, 63%);
+  font-weight: 600;
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+}
+.form__btn .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 2.8rem;
+  opacity: 0.2;
+  visibility: hidden;
+}
+.form__btn:hover .mask {
+  visibility: visible;
+}
+.form__error {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 2rem;
+  letter-spacing: 0.15px;
+  color: hsl(354deg, 100%, 66%);
+  margin-top: 0.6rem;
+  margin-left: 3rem;
+  display: none;
+}
+.error .form__error {
+  display: inline-flex;
+}
+
+.dashboard {
+  width: 64rem;
+  height: 38.3rem;
+  margin-bottom: 7.2rem;
+}
+
+.socials {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.social {
+  width: 3.2rem;
+  height: 3.1rem;
+  cursor: pointer;
+}
+
+.copy {
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 59%);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  body, html {
+    font-size: 8.89px;
+  }
+}
+@media screen and (max-width: 430px) {
+  body, html {
+    font-size: 11.04px;
+  }
+
+  .page {
+    padding-top: 8.1rem;
+    padding-bottom: 3.7rem;
+    padding-left: 2.8rem;
+    padding-right: 2.7rem;
+  }
+  .page__logo {
+    margin-bottom: 3.2;
+    width: 5.6rem;
+    height: 2.4rem;
+    object-fit: contain;
+  }
+  .page__header {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .page__sub {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .form {
+    width: 28.1rem;
+    flex-direction: column;
+    margin-bottom: 7.2rem;
+  }
+  .form.error {
+    margin-bottom: 4rem;
+  }
+  .form__control {
+    width: 100%;
+  }
+  .form__input {
+    height: 4rem;
+    border-radius: 2.8rem;
+    padding: 0 3.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .error .form__input {
+    margin-bottom: 0.2rem;
+  }
+  .form__btn {
+    width: 100%;
+    height: 4rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .form__error {
+    font-size: 1rem;
+    letter-spacing: 0.13px;
+    color: hsl(354deg, 100%, 66%);
+    margin-top: 0.2rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+
+  .dashboard {
+    width: 32rem;
+    height: 19.2rem;
+    margin-bottom: 12rem;
+  }
+
+  .socials {
+    margin-bottom: 2.7rem;
+  }
+
+  .copy {
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  body, html {
+    font-size: 10px;
+  }
+}
