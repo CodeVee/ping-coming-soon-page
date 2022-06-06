@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
     <main class="page">
-      We are launching soon!
-
-      Subscribe and get notified
-  
-      Notify Me
-  
-      &copy; Copyright Ping. All rights reserved.
+      <img src="images/logo.svg" alt="logo" class="page__logo">
+      <h1 class="page__header">We are launching <span>soon!</span></h1>
+      <h2 class="page__sub">Subscribe and get notified</h2>
+      <form class="form">
+        <input id="email" placeholder="Your email address…" type="email" class="form__input">
+        <span id="error" class="form__error hidden">Please provide a valid email address</span>
+        <button class="form__btn">Notify Me</button>
+      </form> 
+      <img src="images/illustration-dashboard.png" alt="dashboard" class="dashboard">
+      <div class="socials">
+        <img src="images/icon-facebook.svg" alt="facebook">
+        <img src="images/icon-twitter.svg" alt="twitter">
+        <img src="images/icon-instagram.svg" alt="instagram">
+      </div>
+      <h3 class="copy">&copy; Copyright Ping. All rights reserved.</h3>
     </main> 
   </body>
 </html>
